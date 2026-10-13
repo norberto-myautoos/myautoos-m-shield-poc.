@@ -1,0 +1,10 @@
+ESP32  ->  MCP2515
+3.3V   ->  VCC
+GND    ->  GND
+GPIO5  ->  CS
+GPIO18 ->  SCK
+GPIO19 ->  MISO
+GPIO23 ->  MOSI
+GPIO2  ->  INT
+
+GPIO4  ->  Relé DRIVE (tu fail-safe)
