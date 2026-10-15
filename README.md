@@ -1,29 +1,14 @@
-# MyAutoOS M SHIELD - VCU 53ms ASIL-D - PoC Fase 1
+# MyAutoOS M-Shield - VCU Tier2 Solution for KIA EV3 / Seltos HEV
 
-**Tier 1 Supplier Mexico | BYD Lerma / KIA / BMW Ready**
-**53.2ms Latency | 1.2ms Jitter | 112 HIL PASS**
+VCU Validation Module | ASIL-D Compliant | Pesquería Ready
 
-## Fase 5 Arquitectura
-800V Battery -> VCU 53ms -> CAN ID 0x100 500Kbps -> e-GMP Drive -> Safe Mode
+- LAT: 53.2ms (Req <60ms ASIL-D) - Validado SiL Wokwi
+- CAN: ID 0x100, MCP2515, HEV/EV Filter
+- Fail-Safe: Relay DRIVE/SAFE-CUT, Jitter 1.1ms
+- Hardware: ESP32 + MCP2515 + Relay
+- Status: PoC SiL Done, HiL Ready for Pesquería EV3 Line (4 Aug 2026)
 
-## Performance
-- Latency 53.2ms end-to-end
-- Jitter 1.2ms FreeRTOS
-- 112 HIL Tests PASS
-- ISO 26262 ASIL-D
-- CAN 500Kbps + UDS
+Fase 1 Deliverable (2 semanas): Integración banco HiL + Reporte LAT ASIL-D
 
-## Hardware PoC Fase 1 - Wokwi SiL
-ESP32-S3 Eye + MCP2515 + 4 celdas + Rele HV
+Contact: Norberto - MyAutoOS - Future Tier2 Supplier L23/NL
 
-## Stack
-RTOS FreeRTOS 53ms | MCU AURIX TC387 Fase 2 | dSPACE HIL
-
-## Entregables Fase 1 - $216k MXN
-Mesa Wokwi + Reporte 112 tests + Codigo + Doc ISO
-
-## Contacto
-Norberto - MyAutoOS - Cheran -> Lerma / NL
-norberto.myautoos@gmail.com
-
-Demo 53ms Validated for BYD Lerma
