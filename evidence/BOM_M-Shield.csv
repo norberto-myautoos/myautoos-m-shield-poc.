@@ -1,0 +1,8 @@
+Qty,Component,Model,Function,Supplier,Cost MXN
+1,MCU,ESP32 DevKit v1,VCU Main Controller,STeren,180
+1,CAN Module,MCP2515 5V with TJA1050,CAN HEV/EV 0x100 Filter,HiLetgo,150
+1,Relay Module,5V 1-Channel SRD-05VDC,Fail-Safe DRIVE/SAFE-CUT,Songle,45
+1,Breadboard,830 points,Prototyping SiL,,80
+1,Wiring Kit,Jumper Dupont M-M M-F 20cm,CAN Harness HEV/EV,,70
+1,Power Supply,USB 5V 2A,VCU Power,,100
+1,Resistor Pack,120 Ohm CAN Termination,CAN Bus Termination,,20
