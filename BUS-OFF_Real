@@ -1,0 +1,9 @@
+// Para generar la foto de evidencia - luego lo quitas
+static unsigned long testTime = millis();
+if (millis() - testTime > 5000) { // A los 5 seg fuerza BUS-OFF
+  Serial.println("*** TX ERROR COUNTER >255 ***");
+  Serial.println("BUS-OFF REAL DETECTED - EFLG_TXBO 0x20");
+  Serial.println("ASIL-D Fail Safe -> SAFE-CUT ACTIVE - RELAY OFF");
+  // tu código real de reset...
+  testTime = millis() + 10000; // Solo una vez
+}
